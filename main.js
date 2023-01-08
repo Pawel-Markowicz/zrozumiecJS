@@ -64,3 +64,39 @@
 
 // console.log(`ilość kroków: ${collatz(21)}`);
 // 
+
+
+// rekurencja liczby parzyste NIEPARZYSTE
+
+// function evenIs(n){
+//     if(n == 0){
+//     return true;        
+//     } else if (n == 1){
+//         return false;
+//     } else if (n < 0){
+//         return evenIs(n - 1);
+//     } else {
+//         return evenIs(n - 2);
+//     }
+// }
+
+// console.log(evenIs(11));
+
+function countChar(string, ch) {
+    let counted = 0;
+    for (let i = 0; i < string.length; i++) {
+      if (string[i] == ch) {
+        counted += 1;
+      }
+    }
+    return counted;
+  }
+  
+  function countBs(string) {
+    return countChar(string, "B");
+  }
+  
+  console.log(countBs("BBC"));
+  // → 2
+  console.log(countChar("kakkerlak", "k"));
+  // → 4
