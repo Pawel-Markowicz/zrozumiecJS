@@ -63,3 +63,4 @@
 // }
 
 // console.log(`ilość kroków: ${collatz(21)}`);
+// 
